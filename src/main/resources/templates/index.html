@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+</head>
+<body>
+<center>
+    <h1>登录页</h1>
+    <form action="/main" method="get">
+        <table cellpadding="5px" cellspacing="0px" border="1px" width="240px" >
+            <tr>
+                <td>帐号:</td>
+                <td><input name="username" type="text"/></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input name="password" type="password"/></td>
+            </tr>
+            <tr>
+                <!--onclick="login()"-->
+                <td colspan="2" style="text-align: center"><input type="submit" value="登录"/>&nbsp;&nbsp;<a href="/registered">注册</a></td>
+            </tr>
+        </table>
+    </form>
+</center>
+<script>
+    function  login() {
+        window.location.href="/main";
+    }
+</script>
+</body>
+</html>
